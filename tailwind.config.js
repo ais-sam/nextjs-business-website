@@ -12,14 +12,15 @@ module.exports = {
     extend: {
       colors:{
         "dark-blue": "#001E6C",
-        "blue": "#035397",
-        "orange": "#E8630A",
-        "yellow": "FCD900",
+        "w-blue": "#035397",
+        "w-orange": "#E8630A",
+        "w-yellow": "FCD900",
         "light-blue": "EFFFFD"
       }
     },
     fontFamily:{
-      'roboto': ['Roboto', 'sans-serif']
+      'roboto': ['Roboto', 'sans-serif'],
+      "inter":  ['Inter', 'sans-serif']
     }
   },
   plugins: [],
