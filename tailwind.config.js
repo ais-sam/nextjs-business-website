@@ -9,12 +9,22 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      center:true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '1rem',
+        lg: '2rem',
+        xl: '2rem',
+        '2xl': '6rem',
+      },
+    },
     extend: {
       colors:{
         "dark-blue": "#001E6C",
         "w-blue": "#035397",
         "w-orange": "#E8630A",
-        "w-yellow": "FCD900",
+        "w-yellow": "#FCD900",
         "light-blue": "EFFFFD"
       }
     },

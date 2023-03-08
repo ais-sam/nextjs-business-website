@@ -6,4 +6,33 @@ html{
   font-family: 'Roboto', sans-serif;
 }
 
+.underlined{
+  position: relative;
+}
+.underlined::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #FCD900;
+  left: 0;
+  bottom: 2px;
+  z-index: -1;
+}
 
+.footer{
+  position: relative;
+}
+.footer::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-image: url("../public/images/footer-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
