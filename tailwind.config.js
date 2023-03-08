@@ -26,6 +26,9 @@ module.exports = {
         "w-orange": "#E8630A",
         "w-yellow": "#FCD900",
         "light-blue": "EFFFFD"
+      },
+      backgroundImage: {
+        'hero': "url('public/images/hero.jpg')",
       }
     },
     fontFamily:{
