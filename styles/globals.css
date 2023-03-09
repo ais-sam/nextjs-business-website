@@ -44,3 +44,9 @@ html{
   padding: 15rem 0;
   height: 300px;
 }
+
+.whatwedo{
+  background-image: url('../public/images/whatwedo-bg.png');
+  background-position: center;
+  background-size: cover;
+}

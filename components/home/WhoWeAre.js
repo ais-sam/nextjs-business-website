@@ -1,23 +1,26 @@
 import Button from 'components/shared/Button';
+import SectionMiniTitle from 'components/shared/SectionMiniTitle';
+import SectionTitle from 'components/shared/SectionTitle';
 import Underline from 'components/shared/Underline';
 import Image from 'next/image';
-import protection from "public/icons/Internet Protection.svg"
-import product from "public/icons/product.svg"
-import goal from "public/icons/goal.svg"
+import goal from "public/icons/goal.svg";
+import protection from "public/icons/Internet Protection.svg";
+import product from "public/icons/product.svg";
+
 
 const WhoWeAre = () => {
   return (
-    <div className="container py-16">
-      {/* Gray title */}
-      <p className=" opacity-30 uppercase font-bold">who we are</p>
+    <div className="container pb-8 pt-16">
+      <SectionMiniTitle>who we are</SectionMiniTitle>
+      
       {/* Content */}
       <div className="flex flex-col lg:flex-row justify-start gap-20">
-        {/* Left */}
+ 
         <div className=' lg:basis-[40rem]'>
-          <h2 className="text-4xl mb-3">
-            Crosson is an international group dedicated to the{" "}
+          <SectionTitle>
+            Crosson is an international group dedicated to the
             <Underline text="food industry." />
-          </h2>
+          </SectionTitle>
 
           <div className='opacity-70 mb-12'>
             <p className='mb-3'>
@@ -34,10 +37,11 @@ const WhoWeAre = () => {
 
         <div className='flex gap-3 items-center'>
             <Button>About Us</Button>
-            <span className='underline text-sm'>Quality Certificates</span>
+            <span className='underline text-sm cursor-pointer'>Quality Certificates</span>
         </div>
         </div>
-        {/* Right */}
+
+ 
         <div className='flex flex-col gap-7 basis-80'>
             <div className='flex items-start gap-3'>
                 <Image src={protection} width={35} height={35}/>
