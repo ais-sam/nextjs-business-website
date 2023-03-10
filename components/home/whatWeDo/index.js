@@ -4,7 +4,8 @@ import SectionTitle from 'components/shared/SectionTitle'
 import Underline from 'components/shared/Underline'
 import Card from 'components/home/whatWeDo/Card'
 import watch from "public/icons/watch.svg"
-import {services} from "data/data"
+import {services, machines} from "data/data"
+import MachineCard from 'components/home/whatWeDo/MachineCard'
 
 
 const WhatWeDo = () => {
@@ -12,7 +13,7 @@ const WhatWeDo = () => {
     <div className='whatwedo py-8'>
         <div className='container'>
             {/* top */}
-            <div className='flex flex-col lg:flex-row items-start gap-8 mb-12'>
+            <div className='flex flex-col lg:flex-row items-start gap-8  lg:mb-12'>
                 {/* left */}
                 <div className='lg:basis-[48rem]'>
                     <SectionMiniTitle>what we do</SectionMiniTitle>
@@ -30,10 +31,21 @@ const WhatWeDo = () => {
                 </div>
             </div>
             {/* center */}
-            <div className='flex items-center gap-8'>
+            <div className='flex items-center gap-8 flex-wrap'>
                {services.map(service=><Card key={service.id} icon={service.icon} title={service.title}/>)}
             </div>
             {/* bottom */}
+            <div className='mt-12 flex flex-col lg:flex-row'>
+                {/* Left */}
+                <div>  
+                    <h3 className='text-2xl mb-3'>Filling and Packaging Machines</h3>
+                    <p className='text-sm opacity-70'>Liquorice lemon drops powder chocolate liquorice candy dessert gummi bears. Caramels marzipan donut jujubes sweet roll. Powder croissant toffee shortbread chocolate sweet pie. </p>
+                    <div className='flex flex-wrap lg:items-center gap-4 mt-4'>
+                        {machines.map((machine)=><MachineCard key={machine.id} {...machine}/>)}
+                    </div>
+                </div>
+                {/* Right */}
+            </div>
         </div>
     </div>
   )
