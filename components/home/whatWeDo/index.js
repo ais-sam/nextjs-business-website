@@ -13,7 +13,7 @@ import message from "public/icons/message.svg"
 
 const WhatWeDo = () => {
   return (
-    <div className='whatwedo py-8'>
+    <div className='whatwedo pt-8 pb-0'>
         <div className='container'>
             {/* top */}
             <div className='flex flex-col lg:flex-row items-start gap-8  lg:mb-12'>
