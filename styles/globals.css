@@ -50,3 +50,7 @@ html{
   background-position: center;
   background-size: cover;
 }
+
+.wwd-shadow{
+  box-shadow: 0px -35px 50px rgba(0, 0, 0, 0.08);
+}
