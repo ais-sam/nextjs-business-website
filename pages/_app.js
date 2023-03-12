@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Header/>
       <Component {...pageProps} />
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 }

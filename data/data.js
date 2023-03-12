@@ -6,10 +6,16 @@ import solutions from "public/icons/solutions.svg"
 import linearMachines from "public/images/linear-machine.png"
 import rotaryMachines from "public/images/rotary-machine.png"
 import bottleMachines from "public/images/bottle-filling-machine.png"
-// steps images
+// steps 
 import step1 from "public/images/step1.jpg"
 import step2 from "public/images/step2.jpg"
 import step3 from "public/images/step3.jpg"
+// news
+import news1 from "public/images/news-1.png"
+import news2 from "public/images/news-2.png"
+
+
+
 export const services = [
     {
         id:1,
@@ -77,5 +83,20 @@ export const steps = [
         title:"Installation & Commissioning",
         image:step3,
         description:"Marshmallow pastry jelly beans chocolate bar cake pastry powder gummi bears."
+    }
+]
+
+export const news = [
+    {
+        id:1,
+        title:"Crosson Holding’s 58th ordinary general assembly convened",
+        image:news1,
+        description:"Toffee sweet roll caramels oat cake lemon drops cupcake sweet roll halvah ice cream."
+    },
+    {
+        id:2,
+        title:"Crosson Holding’s new Board of Directors has been determined.",
+        image:news2,
+        description:"Toffee sweet roll caramels oat cake lemon drops cupcake sweet roll halvah ice cream."
     }
 ]

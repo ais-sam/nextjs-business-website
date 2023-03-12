@@ -54,3 +54,9 @@ html{
 .wwd-shadow{
   box-shadow: 0px -35px 50px rgba(0, 0, 0, 0.08);
 }
+
+section.news{
+  background-image: url('../public/images/news-bg.png');
+  background-position: center;
+  background-size: cover;
+}
