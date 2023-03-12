@@ -10,7 +10,7 @@ import product from "public/icons/product.svg";
 
 const WhoWeAre = () => {
   return (
-    <div className="container pb-8 pt-16">
+    <section className="container pb-8 pt-16">
       <SectionMiniTitle>who we are</SectionMiniTitle>
       
       {/* Content */}
@@ -66,7 +66,7 @@ const WhoWeAre = () => {
             </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

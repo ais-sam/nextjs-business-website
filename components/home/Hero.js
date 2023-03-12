@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <div className="hero flex items-center justify-start">
+    <section className="hero flex items-center justify-start">
         <div className='container'>
             <div className='max-w-lg'>
                 <h1 className='text-4xl mb-3'>We make Filling & Packaging Machines for <Underline text="Food Industry"/> </h1>
@@ -25,7 +25,7 @@ const Hero = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </section>
   );
 }
 

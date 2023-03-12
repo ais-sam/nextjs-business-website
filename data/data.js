@@ -6,7 +6,10 @@ import solutions from "public/icons/solutions.svg"
 import linearMachines from "public/images/linear-machine.png"
 import rotaryMachines from "public/images/rotary-machine.png"
 import bottleMachines from "public/images/bottle-filling-machine.png"
-
+// steps images
+import step1 from "public/images/step1.jpg"
+import step2 from "public/images/step2.jpg"
+import step3 from "public/images/step3.jpg"
 export const services = [
     {
         id:1,
@@ -53,5 +56,26 @@ export const machines = [
         name:"Bottle Filling Machines",
         description:"kjkhsdlf skdfoief kskldjfljei",
         image: bottleMachines
+    }
+]
+
+export const steps = [
+    {
+        id:1,
+        title:"Product Design",
+        image:step1,
+        description:"Toffee sweet roll caramels oat cake lemon drops cupcake sweet roll halvah ice cream."
+    },
+    {
+        id:1,
+        title:"Planing & Production",
+        image:step2,
+        description:"Center we have developed many patents in filling and packaging technology."
+    },
+    {
+        id:1,
+        title:"Installation & Commissioning",
+        image:step3,
+        description:"Marshmallow pastry jelly beans chocolate bar cake pastry powder gummi bears."
     }
 ]
