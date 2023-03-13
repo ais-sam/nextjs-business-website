@@ -60,3 +60,16 @@ section.news{
   background-position: center;
   background-size: cover;
 }
+.question{
+  position: relative;
+}
+.question::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #FCD900;
+  left: 0;
+  bottom: 1px;
+  z-index: -1;
+}
