@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <h4 className="text-lg">
               {/* Have a <Underline text="any questions?" bottom="[100px]" /> */}
-              Have a any <span className='question'>questions</span>
+              Have a any <span className='underline-yellow'>questions</span>
               <br /> Contact Us{" "}
             </h4>
             <div className="flex flex-col  lg:flex-row items-start  lg:items-center gap-4 lg:gap-2">

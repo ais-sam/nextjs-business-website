@@ -25,15 +25,15 @@ const ValueCard = ({type}) => {
 
   return (
     <div>
-      <Image src={data.image} className=" w-64" />
+      <Image src={data.image} className="w-full lg:w-64" />
       <div className="mt-4">
         <h6 className="text-base">{data.title}</h6>
         <p className="text-[13px] mb-58 opacity-70 w-52">
           {data.description}
         </p>
-        <span className="flex items-center text-[13px] gap-4 mt-4">
+        <span className="flex items-center text-[13px] gap-3 mt-4">
           Read More
-          <Image src={arrow} width={5} />
+          <Image src={arrow} width={5} className="translate-y-[1px]"/>
         </span>
       </div>
     </div>

@@ -59,11 +59,12 @@ section.news{
   background-image: url('../public/images/news-bg.png');
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
-.question{
+.underline-yellow{
   position: relative;
 }
-.question::after{
+.underline-yellow::after{
   content: "";
   position: absolute;
   width: 100%;
@@ -72,4 +73,12 @@ section.news{
   left: 0;
   bottom: 1px;
   z-index: -1;
+}
+
+.about{
+  background-image: url('../public/images/about-bg.png');
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -10;
 }

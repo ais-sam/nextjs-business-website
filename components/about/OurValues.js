@@ -5,7 +5,7 @@ import ValueCard from "components/about/ValueCard"
 
 const OurValues = () => {
   return (
-    <section className="my-20 flex flex-col lg:flex-row ">
+    <section className="my-20 flex flex-col lg:flex-row gap-10 lg:gap-0">
         {/* Left */}
         <div className="flex-1">
           <SectionMiniTitle>our values</SectionMiniTitle>
@@ -16,7 +16,7 @@ const OurValues = () => {
           <span className="underline text-sm mt-5 block">Quality Certificates</span>
         </div>
         {/* Right */}
-        <div className="flex flex-col md:flex-row gap-4 flex-1">
+        <div className="flex flex-col sm:flex-row gap-4 flex-1">
           <ValueCard type="mission"/>
           <ValueCard type="vision"/>
         </div>
