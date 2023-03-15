@@ -84,3 +84,7 @@ section.news{
   padding: 3.5rem 0;
   background-color: #F1F1F1;
 }
+
+.services-list{
+  list-style-image: url('../public/icons/checkmark.svg');
+}
