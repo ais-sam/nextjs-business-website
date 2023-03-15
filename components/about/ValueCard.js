@@ -5,18 +5,21 @@ import arrow from "public/icons/arrow.svg"
 import Image from "next/image"
 
 const ValueCard = ({type}) => {
-    if (type="mission") {
-        const data = {
-          title: "Our Mission",
-          description: "Center we have developped many patents in filling and packaging technology.",
-          image:step2
-        };
-    }else if(type="vision"){
-        const data = {
-          title: "Our Vision",
-          description: "Marshmallow pastry jelly beans chocolate bar cake pastry powder gummi bears. ",
-          image:step3
-        };
+  const data= {
+    title:"",
+    description:"",
+    image: null
+  }
+    if (type=="mission") {
+          data.title= "Our Mission",
+          data.description= "Center we have developped many patents in filling and packaging technology.",
+          data.image=step2
+       
+    }else if(type=="vision"){
+          data.title= "Our Vision",
+          data.description= "Marshmallow pastry jelly beans chocolate bar cake pastry powder gummi bears. ",
+          data.image=step3
+       
     }
 
 
