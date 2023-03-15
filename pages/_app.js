@@ -4,6 +4,11 @@ import Header from "components/shared/Header"
 import Footer from "components/shared/Footer";
 
 function MyApp({ Component, pageProps }) {
+
+  if (Component.getLayout) {
+    return Component.getLayout(<Component {...pageProps} />)
+  }
+
   return (
     <>
       <Head>
@@ -13,7 +18,9 @@ function MyApp({ Component, pageProps }) {
         </style>
       </Head>
       <Header/>
-      <Component {...pageProps} />
+      <div className="wrapper">
+        <Component {...pageProps} />
+      </div>
       <Footer/>
     </>
   );
