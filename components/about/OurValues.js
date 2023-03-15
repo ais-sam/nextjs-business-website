@@ -10,7 +10,7 @@ const OurValues = () => {
         <div className="flex-1">
           <SectionMiniTitle>our values</SectionMiniTitle>
           <SectionTitle className=" lg:w-[25rem] mb-6">Crosson has adopted Quality Production as its <Underline text="basic principle."/> </SectionTitle>
-          <p className="text-sm opacity-70 leading-6 w-[26rem]">
+          <p className="text-sm opacity-70 leading-6 lg:w-[26rem]">
           To be one of the pioneering, dynamic and leading companies that offer quality products and services with an understanding of continuous improvement in the fields in which it operates.
           </p>
           <span className="underline text-sm mt-5 block">Quality Certificates</span>

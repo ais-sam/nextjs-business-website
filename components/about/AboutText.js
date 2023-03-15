@@ -2,7 +2,7 @@ import PageIntro from "components/shared/PageIntro";
 
 const AboutText = ({className}) => {
   return (
-    <div className={className}>
+    <section className={className}>
       <PageIntro>
         At the roots of Crosson, there is 20 years of experience in food
         industry that is filled with research, increasing efficiency and
@@ -31,7 +31,7 @@ const AboutText = ({className}) => {
           cake jelly.
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 

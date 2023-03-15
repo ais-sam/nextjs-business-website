@@ -3,6 +3,7 @@ import step2 from "public/images/step2.jpg"
 import step3 from "public/images/step3.jpg"
 import arrow from "public/icons/arrow.svg"
 import Image from "next/image"
+import ReadMore from "components/shared/ReadMore"
 
 const ValueCard = ({type}) => {
   const data= {
@@ -31,10 +32,7 @@ const ValueCard = ({type}) => {
         <p className="text-[13px] mb-58 opacity-70 w-52">
           {data.description}
         </p>
-        <span className="flex items-center text-[13px] gap-3 mt-4">
-          Read More
-          <Image src={arrow} width={5} className="translate-y-[1px]"/>
-        </span>
+        <ReadMore/>
       </div>
     </div>
   );

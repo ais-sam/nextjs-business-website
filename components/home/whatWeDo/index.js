@@ -4,7 +4,7 @@ import SectionTitle from 'components/shared/SectionTitle'
 import Underline from 'components/shared/Underline'
 import Card from 'components/home/whatWeDo/Card'
 import watch from "public/icons/watch.svg"
-import {services, machines} from "data/data"
+import {homeServices, machines} from "data/data"
 import MachineCard from 'components/home/whatWeDo/MachineCard'
 import calendar from "public/icons/calendar.svg"
 import phone from "public/icons/phone.svg"
@@ -35,7 +35,7 @@ const WhatWeDo = () => {
             </div>
             {/* center */}
             <div className='flex items-center gap-8 flex-wrap mt-10 lg:mt-0'>
-               {services.map(service=><Card key={service.id} icon={service.icon} title={service.title}/>)}
+               {homeServices.map(service=><Card key={service.id} icon={service.icon} title={service.title}/>)}
             </div>
         </div>
         {/* bottom */}

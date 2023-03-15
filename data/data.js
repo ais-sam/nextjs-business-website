@@ -13,10 +13,15 @@ import step3 from "public/images/step3.jpg"
 // news
 import news1 from "public/images/news-1.png"
 import news2 from "public/images/news-2.png"
+// services
+import service1 from "public/icons/service1.svg"
+import service2 from "public/icons/service2.svg"
+import service3 from "public/icons/service3.svg"
+import service4 from "public/icons/service4.svg"
 
 
 
-export const services = [
+export const homeServices = [
     {
         id:1,
         title:"Filling and Packaging Machines",
@@ -100,3 +105,30 @@ export const news = [
         description:"Toffee sweet roll caramels oat cake lemon drops cupcake sweet roll halvah ice cream."
     }
 ]
+
+export const services = [
+    {
+        id:1,
+        image:service1,
+        title:"Company Work Managment Software",
+        description:"Center we have developed many patents in filling and packaging technology."
+    },
+    {
+        id:2,
+        image:service2,
+        title:"Crosson Simple Storage Service (S3)",
+        description:"Marshmallow pastry jelly beans chocolate bar cake pastry powder gummi bears."
+    },
+    {
+        id:3,
+        image:service3,
+        title:"Machine Access Salary Contol Sowftare",
+        description:"Center we have developed many patents in filling and packaging technology."
+    },
+    {
+        id:4,
+        image:service4,
+        title:"Scalable Storage in the Cloud Service,",
+        description:"Marshmallow pastry jelly beans chocolate bar cake pastry powder gummi bears."
+    }
+] 

@@ -5,7 +5,7 @@ import checkmark from "public/icons/checkmark.svg"
 
 const ServicesText = ({className}) => {
   return (
-    <div className={className}>
+    <section className={className}>
       <PageIntro>
         Since our machines are produced in compliance with the difficult
         conditions that can be operated 24/7, the{" "}
@@ -40,7 +40,7 @@ const ServicesText = ({className}) => {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
 
