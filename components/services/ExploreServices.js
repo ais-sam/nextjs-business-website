@@ -15,8 +15,8 @@ const ExploreServices = () => {
           To be one of the pioneering, dynamic and leading companies that offer quality products and services with an understanding of continuous improvement in the fields in which it operates.
           </p>
         </div>
-        <div className="my-8 flex gap-10">
-            {services.map(service=><ServiceCard key={service.id} service={service} className=""/>)}
+        <div className="my-8 grid  min-[500px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+            {services.map(service=><ServiceCard key={service.id} service={service} className="max-[500px]:text-ceter "/>)}
         </div>
       </section>
   )
