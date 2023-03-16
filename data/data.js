@@ -18,7 +18,19 @@ import service1 from "public/icons/service1.svg"
 import service2 from "public/icons/service2.svg"
 import service3 from "public/icons/service3.svg"
 import service4 from "public/icons/service4.svg"
-
+// partners
+import amazon from "public/icons/amazon.svg"
+import airbnb from "public/icons/airbnb.svg"
+import asana from "public/icons/asana.svg"
+import framer from "public/icons/framer.svg"
+import lattice from "public/icons/lattice.svg"
+import monday from "public/icons/monday.svg"
+import afterpay from "public/icons/afterpay.svg"
+import invision from "public/icons/invision.svg"
+import slack from "public/icons/slack.svg"
+import gitlab from "public/icons/gitlab.svg"
+import paypal from "public/icons/paypal.svg"
+import trello from "public/icons/trello.svg"
 
 
 export const homeServices = [
@@ -132,3 +144,67 @@ export const services = [
         description:"Marshmallow pastry jelly beans chocolate bar cake pastry powder gummi bears."
     }
 ] 
+
+export const partners = [
+    {
+        id:1,
+        name:"amazon",
+        img: amazon
+    },
+    {
+        id:2,
+        name:"airbnb",
+        img: airbnb
+    },
+    {
+        id:3,
+        name:"asana",
+        img: asana
+    },
+    {
+        id:4,
+        name:"framer",
+        img: framer
+    },
+
+    {
+        id:5,
+        name:"lattice",
+        img: lattice
+    },
+    {
+        id:6,
+        name:"trello",
+        img: trello
+    },
+    {
+        id:7,
+        name:"monday",
+        img: monday
+    },
+    {
+        id:8,
+        name:"afterpay",
+        img: afterpay
+    },
+    {
+        id:9,
+        name:"invision",
+        img: invision
+    },
+    {
+        id:10,
+        name:"slack",
+        img: slack
+    },
+    {
+        id:11,
+        name:"gitlab",
+        img: gitlab
+    },
+    {
+        id:12,
+        name:"paypal",
+        img: paypal
+    },
+]

@@ -1,3 +1,4 @@
+import ServicesPartners from "components/services/ServicesPartners"
 import ExploreServices from "components/services/ExploreServices"
 import ServicesText from "components/services/ServicesText"
 import PageTitle from "components/shared/PageTitle"
@@ -8,6 +9,7 @@ const Services = () => {
         <PageTitle title="Services"/>
         <ServicesText/>
         <ExploreServices/>
+        <ServicesPartners/>
         {/* <AboutText/>
         <OurValues/>
         <Partners/> */}
