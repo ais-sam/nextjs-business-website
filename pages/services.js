@@ -10,11 +10,9 @@ const Services = () => {
         <ServicesText/>
         <ExploreServices/>
         <ServicesPartners/>
-        {/* <AboutText/>
-        <OurValues/>
-        <Partners/> */}
     </div>
   )
 }
 
 export default Services
+

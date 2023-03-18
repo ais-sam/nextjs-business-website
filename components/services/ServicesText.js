@@ -8,10 +8,7 @@ const ServicesText = ({className}) => {
     <section className={className}>
       <PageIntro>
         Since our machines are produced in compliance with the difficult
-        conditions that can be operated 24/7, the
-        <span className="underline-yellow z-10">
-          possibility of malfunction are very low.
-        </span>
+        conditions that can be operated 24/7, the <span className="underline-yellow z-10">possibility of malfunction are very low.</span>
       </PageIntro>
 
       <div>

@@ -88,3 +88,19 @@ section.news{
 .services-list{
   list-style-image: url('../public/icons/checkmark.svg');
 }
+
+.member-card{
+  overflow: hidden;
+}
+
+.member-info{
+  bottom: -100%;
+  position: absolute;
+  left: 0;
+ 
+  transition: ease .6s all;
+}
+
+.member-card:hover .member-info{
+  bottom: 0;
+}

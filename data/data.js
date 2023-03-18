@@ -31,6 +31,8 @@ import slack from "public/icons/slack.svg"
 import gitlab from "public/icons/gitlab.svg"
 import paypal from "public/icons/paypal.svg"
 import trello from "public/icons/trello.svg"
+// team
+import member from "public/images/customer.jpg"
 
 
 export const homeServices = [
@@ -207,4 +209,55 @@ export const partners = [
         name:"paypal",
         img: paypal
     },
+]
+
+export const team = [
+    {
+        id:1,
+        role:"CO-FOUNDER & CO-CEO",
+        name:"Walter White",
+        picture: member
+    },
+    {
+        id:2,
+        role:"CO-FOUNDER & CO-CEO",
+        name:"Jesse Pinkman",
+        picture: member
+    },
+    {
+        id:3,
+        role:"CHIEF OPERATING OFFICER",
+        name:"Skyler White",
+        picture: member
+    },
+    {
+        id:4,
+        role:"CHIEF LEGAL OFFICER",
+        name:"Saul Goodman",
+        picture: member
+    },
+    {
+        id:5,
+        role:"JUNIOR DEVELOPER",
+        name:"Walter Jr",
+        picture: member
+    },
+    {
+        id:6,
+        role:"SECURITY",
+        name:"Mike Ehrmantraut ",
+        picture: member
+    },
+    {
+        id:7,
+        role:"CHIEF OF STAFF",
+        name:"Tuco Salamanca",
+        picture: member
+    },
+    {
+        id:7,
+        role:"CHIEF FINANCIAL OFFICER",
+        name:"Gustavo Fring",
+        picture: member
+    }
 ]
