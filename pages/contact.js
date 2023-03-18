@@ -1,6 +1,7 @@
 import PageTitle from "components/shared/PageTitle"
 import ContactText from "components/contact/ContactText"
 import Button from "components/shared/Button"
+import ContactInfo from "components/contact/ContactInfo"
 
 
 const Contact = () => {
@@ -10,34 +11,7 @@ const Contact = () => {
       <ContactText/>
       <section className="mt-12 flex flex-col lg:flex-row gap-10 lg:gap-3 mb-9">
         {/* Contact info */}
-        <div className=" lg:basis-96">
-          <div className="mb-4">
-              <h4 className="text-md mb-2">Contact Informations</h4>
-              <p className="opacity-70 text-[13px] lg:w-48">Get in touch and let us know how we can help</p>
-          </div>
-          <div>
-            {/* phone */}
-            <div className="mb-3 border">
-              <span className="text-[11px] font-medium opacity-50">PHONE</span>
-              <p className="text-[13px]">+0(850) 544 7514</p>
-            </div>
-            {/* mail */}
-            <div className="mb-3">
-              <span className="text-[11px] font-medium opacity-50">MAIL</span>
-              <p className="text-[13px]">hello@crosson.com</p>
-            </div>
-            {/* adress */}
-            <div className="mb-3">
-              <span className="text-[11px] font-medium opacity-50">ADDRESS</span>
-              <p className="text-[13px] lg:w-56">One Apple Park Way; Cupertino CA 95014, U.S.A.</p>
-            </div>
-            {/* Button */}
-            <div className="flex gap-6 items-center mt-6">
-              <Button className="text-[13px]">Get Direction</Button>
-              <span className="underline text-[13px] cursor-pointer">See on Map</span>
-            </div>
-          </div>
-        </div>
+        <ContactInfo/>
         {/* Contact form */}
         <div className="border flex-1">
             <div className="mb-10">
