@@ -261,3 +261,38 @@ export const team = [
         picture: member
     }
 ]
+
+export const packages = [
+    {
+        id: 1,
+        type: "basic",
+        price: 29,
+        description: "Biscuit biscuit halvah soufflé gummi bears jelly beans",
+        features: ["Upgraded profile","Multi-shot & video","Instant creative portfolio","Team profile and members","Sell goods"],
+        isFeatured: false
+    },
+    {
+        id: 2,
+        type: "standard",
+        price: 49,
+        description: "Biscuit biscuit halvah soufflé gummi bears jelly beans",
+        features: ["Upgraded profile","Multi-shot & video","Instant creative portfolio","Team profile and members","Sell goods"],
+        isFeatured: false
+    },
+    {
+        id: 3,
+        type: "professional",
+        price: 59,
+        description: "Biscuit biscuit halvah soufflé gummi bears jelly beans",
+        features: ["Upgraded profile","Multi-shot & video","Instant creative portfolio","Team profile and members","Sell goods"],
+        isFeatured: true
+    },
+    {
+        id: 4,
+        type: "exclusive",
+        price: 99,
+        description: "Biscuit biscuit halvah soufflé gummi bears jelly beans",
+        features: ["Upgraded profile","Multi-shot & video","Instant creative portfolio","Team profile and members","Sell goods"],
+        isFeatured: false
+    }
+]
