@@ -33,6 +33,10 @@ import paypal from "public/icons/paypal.svg"
 import trello from "public/icons/trello.svg"
 // team
 import member from "public/images/customer.jpg"
+// products
+import product from "public/images/product.jpg"
+
+const { resolve } = require("styled-jsx/css");
 
 
 export const homeServices = [
@@ -294,5 +298,28 @@ export const packages = [
         description: "Biscuit biscuit halvah soufflé gummi bears jelly beans",
         features: ["Upgraded profile","Multi-shot & video","Instant creative portfolio","Team profile and members","Sell goods"],
         isFeatured: false
+    }
+]
+
+export const products = [
+    {
+        id:1,
+        image:product,
+        title:"Filling & Packaging Machines"
+    },
+    {
+        id:2,
+        image:product,
+        title:"Linear Brode Machines"
+    },
+    {
+        id:3,
+        image:product,
+        title:"Rotary Machines"
+    },
+    {
+        id:4,
+        image:product,
+        title:"Bottle Warmup Machines"
     }
 ]
