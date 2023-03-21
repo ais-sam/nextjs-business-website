@@ -50,7 +50,7 @@ const WhatWeDo = () => {
                     </div>
                 </div>
                 {/* Right */}
-                <div className=' basis-72'>
+                <div className='lg:basis-72'>
                     {/* Calnedar */}
                     <div className='flex items-center gap-6 py-6 px-5 bg-[#FAFAFA] border border-[#DFDFDF] border-b-[#DBBD02] border-b-4'>
                         <div>
@@ -64,7 +64,7 @@ const WhatWeDo = () => {
                     </div>
                     {/* Contact info */}
                     <div className='mt-5'>
-                        <p>Are you interested? Contact <br/> our sales department now</p>
+                        <p>Are you interested? Contact  our <br/> sales department now</p>
                         <div className='flex items-start gap-2 mt-3'>
                             <Image src={phone} width={22} height={22}/>
                             <div >

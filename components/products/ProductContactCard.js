@@ -31,7 +31,7 @@ const ProductContactCard = () => {
           </div>
 
           {/* calendar */}
-          <div className="mt-12 flex items-center gap-6 py-6 px-5 bg-[#FAFAFA] border border-[#DFDFDF] border-b-[#DBBD02] border-b-4">
+          <div className="mt-12 flex items-center lg:gap-6 py-6 px-5 bg-[#FAFAFA] border border-[#DFDFDF] border-b-[#DBBD02] border-b-4">
             <div>
               <p>
                 Let's Plan an <br />
@@ -44,7 +44,7 @@ const ProductContactCard = () => {
                 <span className="w-2 h-2 rounded-full bg-[#28CBA4] inline-block"></span>
               </div>
             </div>
-            <Image src={calendar} width={48} height={48} />
+            <Image src={calendar} width={48} height={48} className="ml-auto lg:ml-0"/>
           </div>
         </div>
   )
