@@ -11,8 +11,8 @@ import step1 from "public/images/step1.jpg"
 import step2 from "public/images/step2.jpg"
 import step3 from "public/images/step3.jpg"
 // news
-import news1 from "public/images/news-1.png"
-import news2 from "public/images/news-2.png"
+import news_1 from "public/images/news-1.png"
+import news_2 from "public/images/news-2.png"
 // services
 import service1 from "public/icons/service1.svg"
 import service2 from "public/icons/service2.svg"
@@ -35,6 +35,13 @@ import trello from "public/icons/trello.svg"
 import member from "public/images/customer.jpg"
 // products
 import product from "public/images/product.jpg"
+// news
+import news1 from "public/images/news1.png"
+import news2 from "public/images/news2.png"
+import news3 from "public/images/news3.png"
+import news4 from "public/images/news4.png"
+import news5 from "public/images/news5.png"
+import news6 from "public/images/news6.png"
 
 const { resolve } = require("styled-jsx/css");
 
@@ -113,13 +120,13 @@ export const news = [
     {
         id:1,
         title:"Crosson Holding’s 58th ordinary general assembly convened",
-        image:news1,
+        image:news_1,
         description:"Toffee sweet roll caramels oat cake lemon drops cupcake sweet roll halvah ice cream."
     },
     {
         id:2,
         title:"Crosson Holding’s new Board of Directors has been determined.",
-        image:news2,
+        image:news_2,
         description:"Toffee sweet roll caramels oat cake lemon drops cupcake sweet roll halvah ice cream."
     }
 ]
@@ -321,5 +328,44 @@ export const products = [
         id:4,
         image:product,
         title:"Bottle Warmup Machines"
+    }
+]
+
+export const newsList = [
+    {
+        id:1,
+        title : "Crosson Holding’s 58th ordinary general assembly convened",
+        description: "Toffee sweet roll caramels oat cake lemon drops cupcake sweet roll halvah ice cream.",
+        image : news1
+    },
+    {
+        id:2,
+        title : "Crosson Holding’s new Board of Directors has been determined.",
+        description: "Toffee sweet roll caramels oat cake lemon drops cupcake sweet roll halvah ice cream.",
+        image : news2
+    },
+    {
+        id:3,
+        title : "Crosson Holding’s 58th ordinary general assembly convened",
+        description: "Toffee sweet roll caramels oat cake lemon drops cupcake sweet roll halvah ice cream.",
+        image : news3
+    },
+    {
+        id:4,
+        title : "Crosson Holding’s new Board of Directors has been determined.",
+        description: "Toffee sweet roll caramels oat cake lemon drops cupcake sweet roll halvah ice cream.",
+        image : news4
+    },
+    {
+        id:5,
+        title : "Crosson Holding’s 58th ordinary general assembly convened",
+        description: "Toffee sweet roll caramels oat cake lemon drops cupcake sweet roll halvah ice cream.",
+        image : news5
+    },
+    {
+        id:6,
+        title : "Crosson Holding’s new Board of Directors has been determined.",
+        description: "Toffee sweet roll caramels oat cake lemon drops cupcake sweet roll halvah ice cream.",
+        image : news6
     }
 ]
