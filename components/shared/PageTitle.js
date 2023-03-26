@@ -3,10 +3,10 @@ import Link from "next/link"
 import Image from "next/image"
 import arrow from "public/icons/arrow.svg"
 
-const PageTitle = ({title}) => {
+const PageTitle = ({title,titleClassName}) => {
   return (
     <div>
-        <SectionTitle>{title}</SectionTitle>
+        <SectionTitle className={titleClassName}>{title}</SectionTitle>
         {/* BreadCrumb */}
         <div className="flex gap-2 items-center text-xs">
           <Link href="/">Home</Link>
