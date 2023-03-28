@@ -105,7 +105,46 @@ section.news{
   bottom: 0;
 }
 
-label.burger{
+button.burger span{
+  display: block;
+  height: 2px;
+  width: 23px;
+  background-color: black;
+  position: relative;
+}
+
+button.burger span::before,button.burger span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: block;
+}
+
+button.burger span::before{
+  top: 6px;
+}
+
+button.burger span::after{
+  top: -6px;
+}
+
+button.burger.active span{
+  background-color: transparent;
+}
+
+button.burger.active span::before{
+  top: 0;
+  transform: rotateZ(45deg);
+}
+
+button.burger.active span::after{
+  top: 0;
+  transform: rotateZ(-45deg);
+}
+/* label.burger{
   display:flex;
    flex-direction:column;
    width:25px;
@@ -162,4 +201,4 @@ label.burger{
    width:50%;
    transform: translate(30px,-11px) rotatez(45deg);
  
- }
+ } */

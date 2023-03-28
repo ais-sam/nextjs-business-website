@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import phone from "public/icons/phone.svg";
 import linkedin from "public/icons/Linkedin.svg"
 import twitter from "public/icons/Twitter.svg"
@@ -9,7 +10,17 @@ import Logo from "/components/shared/Logo"
 import Link from "next/link";
 
 const Header = () => {
- 
+  const [open,setOpen] = useState(false)
+  const burgerRef = useRef()
+  const handleClick = ()=>{
+    burgerRef.current.classList.toggle("active")
+    setOpen(!open)
+  }
+
+  const handleMenuItemClick = ()=>{
+
+  }
+
   return (
     <div className="max-w-[2000px] mx-auto">
       {/* Desktop */}
@@ -65,18 +76,16 @@ const Header = () => {
             <Logo />
           </div>
           <div className="burger-icon">
-            <label className="burger" for="check">
-              <input type="checkbox" id="check" />
+            <button className="burger" ref={burgerRef} onClick={handleClick}>
               <span></span>
-              <span></span>
-              <span></span>
-            </label>
+            </button>
           </div>
         </div>
     {/* bottom */}
-        <div className="mobile-menu h-0 overflow-hidden">
+    
+        <div className={`${!open && "h-0"} mobile-menu overflow-hidden pt-4`}>
           <nav className="flex flex-col items-start justify-center gap-4 capitalize text-[15px]">
-              <Link href="/about">about</Link>
+              <Link href="/about" onClick={handleMenuItemClick}>about</Link>
               <Link href="/services">services</Link>
               <Link href="/team">team</Link>
               <Link href="/pricing">pricing</Link>
@@ -85,6 +94,7 @@ const Header = () => {
               <Link href="/contact">contact</Link>
             </nav>
         </div>
+    
       </div>
     </div>
   );
