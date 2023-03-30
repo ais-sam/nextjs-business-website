@@ -1,25 +1,16 @@
-import { useEffect, useRef, useState } from "react";
+import MobileMenu from "components/shared/MobileMenu";
+import Logo from "/components/shared/Logo"
+import Image from "next/image";
+import Link from "next/link";
 import phone from "public/icons/phone.svg";
 import linkedin from "public/icons/Linkedin.svg"
 import twitter from "public/icons/Twitter.svg"
 import instagram from "public/icons/Instagram.svg"
 import english from "public/icons/english.svg"
 
-import Image from "next/image";
-import Logo from "/components/shared/Logo"
-import Link from "next/link";
 
 const Header = () => {
-  const [open,setOpen] = useState(false)
-  const burgerRef = useRef()
-  const handleClick = ()=>{
-    burgerRef.current.classList.toggle("active")
-    setOpen(!open)
-  }
 
-  const handleMenuItemClick = ()=>{
-
-  }
 
   return (
     <div className="max-w-[2000px] mx-auto">
@@ -68,34 +59,7 @@ const Header = () => {
       </div>
 
 
-      {/* Mobile */}
-      <div className="md:hidden py-4  px-2">
-        {/* top */}
-        <div className="flex items-center justify-between mb-2">
-          <div>
-            <Logo />
-          </div>
-          <div className="burger-icon">
-            <button className="burger" ref={burgerRef} onClick={handleClick}>
-              <span></span>
-            </button>
-          </div>
-        </div>
-    {/* bottom */}
-    
-        <div className={`${!open && "h-0"} mobile-menu overflow-hidden pt-4`}>
-          <nav className="flex flex-col items-start justify-center gap-4 capitalize text-[15px]">
-              <Link href="/about" onClick={handleMenuItemClick}>about</Link>
-              <Link href="/services">services</Link>
-              <Link href="/team">team</Link>
-              <Link href="/pricing">pricing</Link>
-              <Link href="/products">products</Link>
-              <Link href="/news">news</Link>
-              <Link href="/contact">contact</Link>
-            </nav>
-        </div>
-    
-      </div>
+      <MobileMenu/>
     </div>
   );
 };
